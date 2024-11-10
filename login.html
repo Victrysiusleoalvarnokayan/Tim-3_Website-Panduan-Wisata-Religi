@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenity Trails</title>
+    <style>
+        /* Reset margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Header styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #9C9C8D; /* Background color sesuai dengan warna layout */
+        }
+
+        .header {
+            background-color: black;
+            color: #fff;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header img {
+            width: 120px; /* Sesuaikan ukuran logo */
+        }
+
+        .header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .login {
+            width: 50;
+            height: 50;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Content layout */
+        .content {
+            display: flex;
+            justify-content: space-around;
+            padding: 30px;
+        }
+
+        .content .column {
+            width: 20%;
+            background-color: #D8D8D8; /* Warna kolom */
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content .column h2 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <img src="serenity.jpeg" alt="Serenity Trails Logo"> <!-- Logo bisa disesuaikan -->
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#category">Category</a>
+            <a href="#destination">Destination</a>
+            <a href="#information">Information</a>
+        </nav>
+        <div class="login">
+            <a href="Menu_Login.html"><img src="image.jpeg"></a><!-- Ikon user -->
+        </div>
+    </header>
+
+    <!-- Content -->
+    <div class="content">
+        <div class="column">
+            <h2>Event</h2>
+        </div>
+        <div class="column">
+            <h2>Foto/Video Tempat Wisata</h2>
+        </div>
+        <div class="column">
+            <h2>Fasilitas</h2>
+        </div>
+        <div class="column">
+            <h2>Ulasan</h2>
+        </div>
+    </div>
+
+</body>
+</html>
