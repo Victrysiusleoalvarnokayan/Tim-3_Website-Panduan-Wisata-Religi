@@ -12,7 +12,6 @@
             box-sizing: border-box;
         }
         
-        /* Header styling */
         body {
             font-family: Arial, sans-serif;
             background-color: #9C9C8D; 
@@ -50,8 +49,6 @@
             align-items: center;
             justify-content: center;
         }
-
-        /* Content layout */
         .content {
             display: flex;
             justify-content: space-around;
@@ -71,11 +68,16 @@
             font-weight: bold;
             margin-bottom: 10px;
         }
+        .column a {
+            color: black;
+            text-decoration: none;   
+        }
+        .column a:hover{
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-
-    <!-- Header -->
     <header class="header">
         <img src="serenity.jpeg" alt="Serenity Trails Logo"> 
         <nav>
@@ -89,10 +91,9 @@
         </div>
     </header>
 
-    <!-- Content -->
     <div class="content">
         <div class="column">
-            <h2>Event</h2>
+            <h2><a href="event.html">Event</a></h2>
         </div>
         <div class="column">
             <h2>Gallery</h2>       
