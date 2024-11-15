@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serenity Trails</title>
     <style>
-        /* Reset margin and padding */
+        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
         
-        /* Header styling */
+        
         body {
             font-family: Arial, sans-serif;
-            background-color: #9C9C8D; /* Background color sesuai dengan warna layout */
+            background-color: #9C9C8D; 
         }
 
         .header {
@@ -28,7 +28,7 @@
         }
 
         .header img {
-            width: 120px; /* Sesuaikan ukuran logo */
+            width: 120px; 
         }
 
         .header nav a {
@@ -51,7 +51,7 @@
             justify-content: center;
         }
 
-        /* Content layout */
+        
         .content {
             display: flex;
             justify-content: space-around;
@@ -60,7 +60,7 @@
 
         .content .column {
             width: 20%;
-            background-color: #D8D8D8; /* Warna kolom */
+            background-color: #D8D8D8; 
             border-radius: 10px;
             padding: 20px;
             text-align: center;
@@ -71,13 +71,42 @@
             font-weight: bold;
             margin-bottom: 10px;
         }
+
+        
+        .event-dropdown {
+            display: inline-flex;
+            align-items: center;
+            padding: 15px;
+            background-color: #D8D8D8;
+        }
+
+        .event-dropdown span {
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        select {
+            padding: 8px;
+            font-size: 16px;
+            appearance: none; /* Hapus default dropdown arrow */
+            background-color: transparent;
+            font-family: inherit;
+        }
+
+        .event-dropdown select:focus {
+            outline: none;
+        }
+
+        
+
+
     </style>
 </head>
 <body>
 
-    <!-- Header -->
+    
     <header class="header">
-        <img src="serenity.jpeg" alt="Serenity Trails Logo"> <!-- Logo bisa disesuaikan -->
+        <img src="serenity.jpeg" alt="Serenity Trails Logo">
         <nav>
             <a href="#home">Home</a>
             <a href="#category">Category</a>
@@ -85,17 +114,22 @@
             <a href="#information">Information</a>
         </nav>
         <div class="login">
-            <a href="Menu_Login.html"><img src="image.jpeg"></a><!-- Ikon user -->
+            <a href="Menu_Login.html"><img src="image.jpeg"></a>
         </div>
     </header>
 
-    <!-- Content -->
+    
     <div class="content">
         <div class="column">
-            <h2>Event</h2>
+            <select id="event"></select>
+                <h2><option value="januari">Event</option></h2>
+                <option value="event1">event1</option>
+                <option value="event2">event2</option>
+            </select>
+
         </div>
         <div class="column">
-            <h2><label for="gallery">Gallery</label></h2>
+            <h2>Gallery</h2>
             <select id="gallery" name="gallery">
                 <option value="foto">Foto</option>
                 <option value="vidio">Video</option>
