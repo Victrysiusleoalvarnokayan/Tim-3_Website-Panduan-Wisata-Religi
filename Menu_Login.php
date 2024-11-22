@@ -1,3 +1,6 @@
+<?php
+//php
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +23,7 @@
             </div>
             <button type="submit">Log In</button>
             <div class="register">
-                <p>Don't have an account? <a href="#" onclick="showSignUp()">Create Account</a></p>
+                 <p>Don't have an account? <a href="#" onclick="showSignUp()">Create Account</a></p>
             </div>
         </form>
 
