@@ -117,50 +117,31 @@
     </style>
 </head>
 
-<body class="bg-black text-white">
-    <header class="bg-black text-white py-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="flex items-center">
-                <img src="serenity.jpeg" class="h-10" height="50" width="50" />
-            </div>
-            <nav class="space-x-8">
-                <a class="text-white text-lg font-roboto" href="#">
-                    Home
-                </a>
-                <a class="text-white text-lg font-roboto" href="#">
-                    Category
-                </a>
-                <a class="text-white text-lg font-roboto" href="#">
-                    Destination
-                </a>
-                <a class="text-white text-lg font-roboto" href="#">
-                    Information
-                </a>
-            </nav>
-            <div>
-                <i class="fas fa-user-circle text-3xl">
-                </i>
-            </div>
-        </div>
-    </header>
-    <main class="relative">
-        <div class="absolute inset-0 bg-cover bg-center opacity-50"
-            style="background-image: url('https://placehold.co/1920x1080');">
-        </div>
-    </main>
-
+<body>
+  <div class="header">
+    <img alt="Serenity Trails Logo" height="50" src="serenity.jpeg" width="100"/>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="Kategori.html">Category</a>
+            <a href="destinasi.html">Destination</a>
+            <a href="informasi.html">Information</a>
+        </nav>
+    <div class="user-icon">
+        <i class="fas fa-user-circle"></i>
+        <a href="Menu_Login.html"><img alt="user-icon" src="image.jpeg">
+    </div>
+</div>
 
     <div class="content">
         <div class="column">
-            <h2><a href="event.html">Event</a></h2>
+            <h2><a href="event.php">Event</a></h2>
         </div>
         <div class="column">
             <h2>Foto/Video Tempat Wisata</h2>
         </div>
         <div class="column">
-            <h2><a href="panduan.html">Panduan Wisata</a></h2>
+            <h2><a href="panduan.php">Panduan Wisata</a></h2>
         </div>
-
         <div class="column">
             <h2>Ulasan</h2>
         </div>
