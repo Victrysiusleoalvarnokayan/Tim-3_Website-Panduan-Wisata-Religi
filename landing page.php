@@ -73,10 +73,10 @@ nav a:hover {
      <a class="text-white text-lg font-roboto" href="landing page.php">
       Home
      </a>
-     <a class="text-white text-lg font-roboto" href="#">
+     <a class="text-white text-lg font-roboto" href="kategori.php">
         Category
        </a>
-       <a class="text-white text-lg font-roboto" href="#">
+       <a class="text-white text-lg font-roboto" href="destinasi.php">
         Destination
        </a>
        <a class="text-white text-lg font-roboto" href="informasi.php">
