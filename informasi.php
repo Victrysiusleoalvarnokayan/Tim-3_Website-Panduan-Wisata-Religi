@@ -79,12 +79,6 @@
             text-decoration: underline;
         }
 
-        .user img {
-            width: 35px;
-            height: 35px;
-            border-radius: 17.5px;
-        }
-
         .content {
             display: flex;
             justify-content: space-around;
@@ -113,7 +107,6 @@
         .column a:hover {
             text-decoration: underline;
         }
-    </style>
     </style>
 </head>
 
