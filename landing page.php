@@ -70,7 +70,7 @@ nav a:hover {
      <img src="serenity.jpeg" class="h-10" height="50"  width="50"/>
     </div>
     <nav class="space-x-8">
-     <a class="text-white text-lg font-roboto" href="#">
+     <a class="text-white text-lg font-roboto" href="landing page.php">
       Home
      </a>
      <a class="text-white text-lg font-roboto" href="#">
@@ -79,7 +79,7 @@ nav a:hover {
        <a class="text-white text-lg font-roboto" href="#">
         Destination
        </a>
-       <a class="text-white text-lg font-roboto" href="#">
+       <a class="text-white text-lg font-roboto" href="informasi.php">
         Information
        </a>
       </nav>
