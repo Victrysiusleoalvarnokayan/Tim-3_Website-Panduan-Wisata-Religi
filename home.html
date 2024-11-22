@@ -1,109 +1,134 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Serenity Trails</title>
+    <title>Tempat Ibadah</title>
     <style>
-    
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
         body {
-            font-family: Arial, sans-serif;
-            background-color: #9C9C8D; 
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: burlywood;
         }
-
         .header {
-            background-color: black;
+            background-color: #000;
             color: #fff;
-            padding: 15px;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            justify-content: space-between;
         }
-
         .header img {
-            width: 120px; 
+            height: 50px;
+            margin-left: 20px;
         }
-
+        .header nav {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+        }
         .header nav a {
-            color: white;
+            color: #fff;
             text-decoration: none;
             margin: 0 15px;
-            font-weight: bold;
+            font-size: 18px;
+            font-weight: 700;
         }
-
-        .header nav a:hover {
-            text-decoration: underline;
+        .header .user-icon {
+            margin-right: 20px;
         }
-
-        .login {
-            width: 50;
-            height: 50;
-            background-color: black;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .header .user-icon i {
+            font-size: 30px;
         }
         .content {
-            display: flex;
-            justify-content: space-around;
-            padding: 30px;
-        }
-
-        .content .column {
-            width: 20%;
-            background-color: #D8D8D8; 
-            border-radius: 10px;
-            padding: 20px;
             text-align: center;
+            padding: 20px;
         }
-
-        .content .column h2 {
+        .content h1 {
+            background-color: #000;
+            color: #fff;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 24px;
+        }
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background-color: #000;
+            color: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            width: 450px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card h2 {
             font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 10px;
+            margin: 10px;
+            color:white;
         }
-        .column a {
-            color: black;
-            text-decoration: none;   
+        .card a{
+            color : white;
+            text-decoration: none;
         }
-        .column a:hover{
-            text-decoration: underline;
+        .card a:hover {
+            color :white ;
+            text-decoration: none;
+        }
+        .card p {
+            font-size: 14px;
+            margin: 10px;
         }
     </style>
 </head>
 <body>
-    <header class="header">
-        <img src="serenity.jpeg" alt="Serenity Trails Logo"> 
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#category">Category</a>
-            <a href="#destination">Destination</a>
-            <a href="#information">Information</a>
-        </nav>
-        <div class="login">
-            <a href="Menu_Login.html"><img src="image.jpeg"></a>
-        </div>
-    </header>
-
-    <div class="content">
-        <div class="column">
-            <h2><a href="event.php">Event</a></h2>
-        </div>
-        <div class="column">
-            <h2>Gallery</h2>       
-        </div>
-        
-        </div>
-        <div class="column">
-            <h2>Ulasan</h2>
+    <div class="header">
+        <img alt="Serenity Trails Logo" height="50" src="serenity.jpeg" width="100"/>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="Kategori.html">Category</a>
+                <a href="destinasi.html">Destination</a>
+                <a href="informasi.html">Information</a>
+            </nav>
+        <div class="user-icon">
+            <i class="fas fa-user-circle"></i>
+            <a href="Menu_Login.html"><img alt="user-icon" src="image.jpeg">
         </div>
     </div>
-
+    <div class="content">
+        <h1>Event</h1>
+        <div class="cards">
+            <div class="card">
+                <img alt="Gua Maria Teluk Dalam" height="150" src="gua maria teluk dalam.jpg" width="250"/>
+                <h2><a href="https://kepri.kemenag.go.id/page/det/1500-umat-katolik-rayakan-misa-penutupan-bulan-rosario-di-gua-maria-teluk-dalam#:~:text=*%201500%20Umat%20Katolik%20Rayakan%20Misa,dalam%20dan%20dari%20Paroki%20ATM.">Penutupan Bulan Rosario</a></h2>
+                <p>Bulan Oktober sebagai bulan Rosario merupakan warisan spiritual dari Paus Leo XIII. Warisan spiritual ini juga dilaksanakan oleh Umat Khatolik di Pulau Bintan yakni pada Minggu, 27 Oktober 2024.</p>
+            </div>
+            <div class="card">
+                <img alt="Masjid Agung Kota Batam" height="150" src="maulid nabi masjid agung.jpg" width="250"/>
+                <h2><a href="https://bpbatam.go.id/resmi-dibuka-kembali-perayaan-maulid-nabi-digelar-di-masjid-agung-kota-batam/">Perayaan Maulid Nabi</a></h2>
+                <p>Sebagai perayaan penggunaan kembali Masjid Agung Raja Hamidah, dilaksanakan shalat berjamaah yang diikuti oleh umat muslim se-Kota Batam pada 15 September 2024.</p>
+            </div>
+            <div class="card">
+                <img alt="Vihara Cipta Darma, Seipanas, Vihara Budi Bakti" height="150" src="pawai tatung.jpg" width="250"/>
+                <h2><a href="https://kemenagbatam.com/main/detail/bunyi-petasan-tandai-di-mulainya-pawai-tatung-2024-kota-batam">Pawai Tatung Tionghoa</a></h2>
+                <p>Event yang diselenggarakan oleh Majelis Agama Buddha Tridharma Indonesia dengan tema "Harmoni dalam Keberagaman" pada 15 September 2024 di Kota Batam.</p> 
+            </div>
+            <div class="card">
+                <img alt="Vihara Duta Maitreya" height="150" src="dharmasanti.jpg" width="250"/>
+                <h2><a href="https://kepri.kemenag.go.id/page/det/zulkarnain-hadiri-perayaan-dharmasanti-waisak-se-kota-batam-2568-be-2024">Darmasanti Waisak 2568 BE</a></h2>
+                <p>Acara Ini dilaksanakan pada 08 Juni 2024 bertempat di Maha Vihara Duta Maitreya. Acara ini diawali dengan berbagai kegiatan, mulai bagi takjil, donor darah, dan kegiatan-kegiatan positif lainnya.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
