@@ -1,8 +1,6 @@
 <?php
 // event
 ?>
-
-</p></p>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +26,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-    }
+    }3
 
     .header img {
       height: 50px;
