@@ -11,31 +11,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&amp;family=Great+Vibes&amp;display=swap"
         rel="stylesheet" />
     <style>
-        body {
+        body{
             font-family: Arial, sans-serif;
+            background-color: burlywood;
+            color: #ffffff;
             margin: 0;
             padding: 0;
-            background-image: url(Home.jpg);
-            background-size: cover;
-            background-position: center;
         }
 
-        header {
-            background-color: black;
-            color: #fff;
-            height: 65px;
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            text-align: center;
+        .header {
+          background-color: #000;
+          color: #fff;
+          padding: 10px 0;
+          text-align: center;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+    
+        .header img {
+          height: 50px;
+          margin-left: 20px;
+        }
+    
+        .header nav {
+          display: flex;
+          justify-content: center;
+          flex-grow: 1;
+        }
+    
+        .header nav a {
+          color: #fff;
+          text-decoration: none;
+          margin: 0 15px;
+          font-size: 18px;
+          font-weight: 700;
+        }
+    
+        .header .user-icon {
+          margin-right: 20px;
+        }
+    
+        .header .user-icon i {
+          font-size: 30px;
         }
 
-        .logo img {
-            width: 150px;
-            height: auto;
-            border-radius: 40%;
-        }
 
         nav ul {
             list-style: none;
