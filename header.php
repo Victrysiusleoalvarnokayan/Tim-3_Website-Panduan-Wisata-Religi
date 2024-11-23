@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="header_style.css">
     <div class="header">
         <img alt="Serenity Trails Logo" height="50" src="serenity.jpeg" width="100"/>
         <nav>
