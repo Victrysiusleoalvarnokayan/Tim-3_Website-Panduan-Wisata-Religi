@@ -8,13 +8,17 @@
     <title>Serenity Trails</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+<<<<<<< HEAD
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&amp;family=Great+Vibes&amp;display=swap" rel="stylesheet" />
+=======
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&amp;family=Great+Vibes&amp;display=swap"rel="stylesheet" />
+>>>>>>> 0d887e07e9614868d2e888fa473c86fb4965b7e0
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url(Home.jpg);
+            background-image: url(img/Home.jpg);
             background-size: cover;
             background-position: center;
         }
@@ -68,6 +72,7 @@
     <div class="header">
         <?php
 
+<<<<<<< HEAD
         include('header.php');
     
         ?>
@@ -78,6 +83,23 @@
     <p class="mt-4 text-xl font-great-vibes" style="color: black">Official Team Serenity Trails</p>
 </div>
 
+=======
+<body>
+    <?php
+
+    include('header.php');
+    
+    ?>
+
+    </header>
+    <main class="relative">
+        <div class="container mx-auto relative z-10 text-center py-32">
+            <h1 class="text-6xl font-bold font-roboto" style="color: black; ">Temukan keindahan Dan Kedamaian Di
+                Berbagai Destinasi Religi Di Kota Batam</h1>
+            <p class="mt-4 text-xl font-great-vibes" style="color: black">Official Team Serenity Trails</p>
+        </div>
+    </main>
+>>>>>>> 0d887e07e9614868d2e888fa473c86fb4965b7e0
     
 </body>
 </html>

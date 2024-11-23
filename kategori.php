@@ -4,22 +4,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Kategori Wisata</title>
+    <title>Kategori Destinasi</title>
     <link rel="stylesheet" href="css/kategori_style.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="home.html"><img src="img/serenity.png" alt="Serenity Trails Logo"></a>
-        </div>
         <?php
 
-            include('header.php');
-
+        include('header.php');
+        
         ?>
-        <div class="user">
-            <a href="login.html"><img src="img/image.jpeg" alt="User Icon"></a>
-        </div>
     </header>
     <div class="content">
         <h1>KATEGORI WISATA</h1>

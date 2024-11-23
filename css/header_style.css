@@ -38,18 +38,3 @@ nav a {
     border-radius: 50%;
 }
 
-.header {
-    text-align: center;
-    padding: 20px;;
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    position: relative;
-}
-
-.header h1 {
-    position: relative;
-    z-index: 1;
-    font-size: 36px;
-    margin: 0;
-}
