@@ -12,19 +12,13 @@
     <link rel="stylesheet" href="css/informasi.css">
 
 <body>
-  <div class="header">
-    <img alt="Serenity Trails Logo" height="50" src="serenity.jpeg" width="100"/>
-        <nav>
-            <a href="landing page.php">Home</a>
-            <a href="kategori.php">Category</a>
-            <a href="destinasi.php">Destination</a>
-            <a href="informasi.php">Information</a>
-        </nav>
-    <div class="user-icon">
-        <i class="fas fa-user-circle"></i>
-        <a href="Menu_Login.php"><img alt="user-icon" src="image.jpeg">
+    <div class="header">
+    <?php
+
+        include ('header.php');
+
+    ?>
     </div>
-</div>
 
     <div class="content"> 
         <div class="column">
