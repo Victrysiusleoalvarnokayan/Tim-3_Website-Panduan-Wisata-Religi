@@ -40,8 +40,7 @@ nav a {
 
 .header {
     text-align: center;
-    padding: 20px;
-    background-image: url('https://placehold.co/1920x600');
+    padding: 20px;;
     background-size: cover;
     background-position: center;
     color: #fff;
