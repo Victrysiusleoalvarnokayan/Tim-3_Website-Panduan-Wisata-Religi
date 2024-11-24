@@ -93,10 +93,10 @@ p {
     <div class="header">
         <img alt="Serenity Trails Logo" height="50" src="serenity.jpeg" width="100"/>
             <nav>
-                <a href="home.php">Home</a>
-                <a href="Kategori.php">Category</a>
-                <a href="destinasi.php">Destination</a>
-                <a href="informasi.php">Information</a>
+                <a href="home.html">Home</a>
+                <a href="Kategori.html">Category</a>
+                <a href="destinasi.html">Destination</a>
+                <a href="informasi.html">Information</a>
             </nav>
         <div class="user-icon">
             <i class="fas fa-user-circle"></i>
