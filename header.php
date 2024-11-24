@@ -1,28 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Kategori Wisata</title>
+    <title>Header</title>
     <link rel="stylesheet" href="css/header_style.css">
 </head>
-
 <body>
-   <header>
+    <header>
         <div class="logo">
             <img src="img/serenity.png" alt="Serenity Trails Logo">
         </div>
         <nav class="space-x-8">
-            <a class="text-white text-lg font-roboto" href="index.php">
-                Home
-            </a>
-            <a class="text-white text-lg font-roboto" href="kategori.php">
-                Category
-            </a>
-            <a class="text-white text-lg font-roboto" href="#">
-                Destination
-            </a>
-            <a class="text-white text-lg font-roboto" href="informasi.php">
-                Information
-            </a>
+            <a class="text-white text-lg font-roboto" href="index.php">Home</a>
+            <a class="text-white text-lg font-roboto" href="kategori.php">Category</a>
+            <a class="text-white text-lg font-roboto" href="destinasi.php">Destination</a>
+            <a class="text-white text-lg font-roboto" href="informasi.php">Information</a>
         </nav>
         <div>
             <i class="fas fa-user-circle text-3xl">
