@@ -4,12 +4,98 @@
 <html>
 <head>
     <title>Panduan Tempat Wisata Religi</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="css/kategori_style.css"> 
+=======
+    <link rel="stylesheet" href="style.css"> 
+>>>>>>> 8d2b38bba24b111502ae28be49e3eec30232d443
 </head>
+<style>
+    body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: burlywood;
+}
+.header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header img {
+    height: 50px;
+    margin-left: 20px;
+}
+.header nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+.header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.header .user-icon {
+    margin-right: 20px;
+}
+.header .user-icon i {
+    font-size: 30px;
+}
+.content {
+    text-align: center;
+    padding: 20px;
+}
+.content h1 {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 24px;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+.card {
+    background-color: #000;
+    color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 450px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Menjaga proporsi gambar */
+}
+.card p {
+    font-size: 14px;
+    margin: 10px ;
+    text-align: left; /* Mengatur teks menjadi rata kiri */
+}    
+p {
+    text-align: left;
+    margin-left: 0;
+
+
+}
+</style>
 
 <body>
     <div class="header">
-        <img alt="Serenity Trails Logo" height="50" src="img/serenity.jpeg" width="100"/>
+        <img alt="Serenity Trails Logo" height="50" src="serenity.jpeg" width="100"/>
             <nav>
                 <a href="home.html">Home</a>
                 <a href="kategori.php">Category</a>
@@ -136,7 +222,7 @@
         <div class="cards">
             <div class="card">
                 <img alt="Gereja HKBP Batam" height="150" 
-                src="img/gereja_hkbp_batamcenter.png" width="250"/>
+                src="hkbp.jpg" width="250"/>
                 <h2>Gereja HKBP Batam</h2>
                 <p>Lokasi: <strong>Jl. Kamboja No.1, Lubuk Baja Kota, Kec. Batam Kota, Kota Batam, Kepulauan Riau.</p>
                 <p>Diresmikan: <strong>Tahun 1992, Gereja ini adalah gereja Protestan yang terletak di Batam, Kepulauan Riau. Sebagai bagian dari jaringan gereja HKBP yang memiliki banyak cabang di seluruh Indonesia, gereja ini menjadi tempat ibadah yang penting bagi umat Kristiani, khususnya umat Batak.</p>

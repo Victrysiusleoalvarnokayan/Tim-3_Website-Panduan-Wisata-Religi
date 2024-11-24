@@ -4,22 +4,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Kategori Wisata</title>
+    <title>Kategori Destinasi</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&amp;family=Great+Vibes&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&amp;family=Great+Vibes&amp;display=swap"rel="stylesheet" />
     <link rel="stylesheet" href="css/kategori_style.css">
+    <?php
+
+        include('header.php');
+
+    ?>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="home.html"><img src="img/serenity.png" alt="Serenity Trails Logo"></a>
-        </div>
-        <?php
-
-            include('header.php');
-
-        ?>
-        <div class="user">
-            <a href="login.html"><img src="img/image.jpeg" alt="User Icon"></a>
-        </div>
     </header>
     <div class="content">
         <h1>KATEGORI WISATA</h1>
