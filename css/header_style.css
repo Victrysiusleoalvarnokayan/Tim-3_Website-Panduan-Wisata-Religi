@@ -1,0 +1,56 @@
+header {
+    background-color: black;
+    color: #fff;
+    height: 65px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    border-radius: 40%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.user img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-image: url('https://placehold.co/1920x600');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+}
+
+.header h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 36px;
+    margin: 0;
+}
