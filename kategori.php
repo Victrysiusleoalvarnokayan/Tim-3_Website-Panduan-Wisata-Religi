@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Kategori Wisata</title>
+    <title>Kategori Destinasi</title>
     <link rel="stylesheet" href="css/kategori_style.css">
 </head>
 <body>
