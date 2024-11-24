@@ -2,6 +2,9 @@
      <a class="text-white text-lg font-roboto" href="index.php">
       Home
      </a>
+     <a class="text-white text-lg font-roboto" href="kategori.php">
+        Category
+       </a>
        <a class="text-white text-lg font-roboto" href="#">
         Destination
        </a>
