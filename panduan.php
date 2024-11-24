@@ -94,7 +94,7 @@ p {
         <img alt="Serenity Trails Logo" height="50" src="serenity.jpeg" width="100"/>
             <nav>
                 <a href="home.html">Home</a>
-                <a href="Kategori.html">Category</a>
+                <a href="kategori.php">Category</a>
                 <a href="destinasi.html">Destination</a>
                 <a href="informasi.html">Information</a>
             </nav>
