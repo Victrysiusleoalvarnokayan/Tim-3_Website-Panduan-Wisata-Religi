@@ -14,7 +14,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url(Home.jpg);
+            background-image: url(img/Home.jpg);
             background-size: cover;
             background-position: center;
         }
@@ -66,19 +66,15 @@
     </style>
 </head>
 
-<body class="bg-black text-white">
+<body>
     <?php
 
     include('header.php');
     
     ?>
 
-    </div>
-    </div>
     </header>
     <main class="relative">
-        <div class="absolute inset-0 bg-cover bg-center opacity-50" background-image="img/home.jpg">
-        </div>
         <div class="container mx-auto relative z-10 text-center py-32">
             <h1 class="text-6xl font-bold font-roboto" style="color: black; ">Temukan keindahan Dan Kedamaian Di
                 Berbagai Destinasi Religi Di Kota Batam</h1>
@@ -87,5 +83,4 @@
     </main>
     
 </body>
-
 </html>
