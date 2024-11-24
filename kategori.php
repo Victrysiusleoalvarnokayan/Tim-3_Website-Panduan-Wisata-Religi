@@ -6,14 +6,13 @@
 <head>
     <title>Kategori Destinasi</title>
     <link rel="stylesheet" href="css/kategori_style.css">
+    <?php
+
+    include("header.php");
+
+    ?>
 </head>
 <body>
-    <header>
-        <?php
-
-        include('header.php');
-        
-        ?>
     </header>
     <div class="content">
         <h1>KATEGORI WISATA</h1>
