@@ -1,4 +1,4 @@
-<!DOCTYPE html> //*Header*//
+<!DOCTYPE html>
 <html>
 <head>
     <title>Kategori Wisata</title>
@@ -24,8 +24,9 @@
                 Information
             </a>
         </nav>
-        <div class="user">
-            <a href="Menu_Login.php"><img src="img/image.jpeg" alt="User Icon"></a>
+        <div>
+            <i class="fas fa-user-circle text-3xl">
+            </i>
         </div>
     </header>
 </body>
