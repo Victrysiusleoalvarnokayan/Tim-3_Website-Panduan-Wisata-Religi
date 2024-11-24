@@ -8,8 +8,7 @@
     <title>Serenity Trails</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&amp;family=Great+Vibes&amp;display=swap"
-        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&amp;family=Great+Vibes&amp;display=swap"rel="stylesheet" />
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -74,15 +73,11 @@
     
     ?>
 
-    <div>
-        <i class="fas fa-user-circle text-3xl">
-        </i>
     </div>
     </div>
     </header>
     <main class="relative">
-        <div class="absolute inset-0 bg-cover bg-center opacity-50"
-            style="background-image: url('https://placehold.co/1920x1080');">
+        <div class="absolute inset-0 bg-cover bg-center opacity-50" background-image="img/home.jpg">
         </div>
         <div class="container mx-auto relative z-10 text-center py-32">
             <h1 class="text-6xl font-bold font-roboto" style="color: black; ">Temukan keindahan Dan Kedamaian Di
