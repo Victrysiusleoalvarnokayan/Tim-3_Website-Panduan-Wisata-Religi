@@ -1,6 +1,5 @@
-<!DOCTYPE html>
+<!DOCTYPE html> //*Header*//
 <html>
-
 <head>
     <title>Kategori Wisata</title>
     <link rel="stylesheet" href="css/header_style.css">
