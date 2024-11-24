@@ -1,4 +1,4 @@
-    body {
+body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background-color: burlywood;
@@ -65,7 +65,8 @@
 .card img {
     width: 100%;
     height: 150px;
-    object-fit: cover; /* Menjaga proporsi gambar */
+    object-fit: cover;
+    display: block; /* Menghindari spasi di bawah gambar */
 }
 .card p {
     font-size: 14px;
