@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Peta Wisata - Serenity Trails</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Peta Wisata - Jelajahi berbagai destinasi wisata religi di Batam.">
+  <style>
+    /* Submenu Styling */
+    .submenu {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      padding: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      z-index: 1000;
+    }
+
+    .menu-item:hover .submenu,
+    .submenu:hover {
+      display: block;
+    }
+
+    .submenu a {
+      display: block;
+      color: white;
+      padding: 5px 10px;
+      text-decoration: none;
+      background-color: #444;
+      border-radius: 5px;
+      margin-bottom: 5px;
+    }
+
+    .submenu a:hover {
+      background-color: #555;
+    }
+
+    nav {
+      position: relative;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .grid-item {
+      background: white;
+      color: black;
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .grid-item:hover {
+      background-color: #eee;
+      cursor: pointer;
+      transform: scale(1.05);
+      transition: 0.3s;
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .grid-item h3 {
+      margin-top: 10px;
+      font-size: 1.25rem;
+    }
+  </style>
+</head>
+<body class="bg-black text-white">
+  <!-- Header Section -->
+  <header class="bg-black text-white py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center">
+        <img alt="Serenity Trails Logo" class="h-10" height="100" src="https://raw.githubusercontent.com/Victrysiusleoalvarnokayan/Tim-3_Website-Panduan-Wisata-Religi/refs/heads/main/img/serenity.png" width="100" />
+        <span class="ml-2 text-2xl font-great-vibes">
+          Serenity
+          <span class="font-roboto">TRAILS</span>
+        </span>
+      </div>
+      <nav class="space-x-8">
+        <a class="text-white text-lg font-roboto" href="index.html">Home</a>
+        <a class="text-white text-lg font-roboto" href="#">Category</a>
+        <div class="menu-item inline-block relative">
+          <a class="text-white text-lg font-roboto" href="#">Destination</a>
+          <div class="submenu">
+            <a href="peta-wisata.html">Peta Wisata</a>
+            <a href="#">Destinasi Tempat</a>
+            <a href="#">Rekomendasi Populer</a>
+          </div>
+        </div>
+        <a class="text-white text-lg font-roboto" href="#">Information</a>
+      </nav>
+      <div>
+        <i class="fas fa-user-circle text-3xl"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Title Section -->
+    <header class="text-center py-8">
+      <h1 class="text-4xl font-bold font-roboto">Peta Wisata</h1>
+      <p class="text-xl font-light">Jelajahi berbagai destinasi wisata</p>
+    </header>
+    <!-- Grid Section -->
+    <div class="grid-container">
+      <!-- Destinasi 1 -->
+      <div class="grid-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ1Pt324p7jEAgk3qDtHv8yyLMr4s4RVMEeT1TXRQUqtvWRKl6" alt="Masjid Raya Sultan Mahmud Riayat Syah">
+        <h3>Masjid Raya Sultan Mahmud Riayat Syah</h3>
+        <p>Tj. Uncang, Kec. Batu Aji, Kota Batam, Kepulauan Riau 29425</p>
+      </div>
+      <!-- Destinasi 2 -->
+      <div class="grid-item">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/13/ad/20/thousands-hands-guan.jpg?w=1400&h=800&s=1" alt="Vihara Budhi Bhakti">
+        <h3>Vihara Budhi Bhakti</h3>
+        <p>Jl. Pembangunan, Lubuk Baja Kota, Kec. Lubuk Baja, Kota Batam, Kepulauan Riau 29432</p>
+      </div>
+      <!-- Destinasi 3 -->
+      <div class="grid-item">
+        <img src="https://lh3.googleusercontent.com/p/AF1QipNkk44MDDPL2X-9JqMz_MOwhbats5bZhT3dj6fH=s1360-w1360-h1020" alt="Gereja Katolik Paroki Santo Petrus">
+        <h3>Gereja Katolik Paroki Santo Petrus</h3>
+        <p>Pantai Cermin, Kec. Tapung, Kabupaten Kampar, Riau 28464</p>
+      </div>
+      <!-- Destinasi 4 -->
+      <div class="grid-item">
+        <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSAkrmsqeqJU0VV8lRGZ3fj2Q5T6PfmUvfBR9sYCIxbmqtFhwDT" alt="Paroki Santo Damian">
+        <h3>Paroki Santo Damian</h3>
+        <p>Kompleks Green Town, Jl. Yos Sudarso, Bengkong Laut, Kec. Bengkong, Kota Batam, Kepulauan Riau 29432</p>
+      </div>
+      <!-- Destinasi 5 -->
+      <div class="grid-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUR_mTZVh2xvifUAOuVSk6LBuW7FHGcJJNE_VFkrsCg6n-zfwO" alt="Masjid Tanwirun Naja (Masjid Tanjak)">
+        <h3>Masjid Tanwirun Naja (Masjid Tanjak)</h3>
+        <p>Patung Rajawali, Batu Besar, Kecamatan Nongsa, Kota Batam, Kepulauan Riau 29465</p>
+      </div>
+      <!-- Destinasi 6 -->
+      <div class="grid-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw0399byebkmMk0nq1Lqgc73q7jgy8lR6x0wFbuTh56vwlhqeT" alt="GPIB Immanuel Batam">
+        <h3>GPIB Immanuel Batam</h3>
+        <p>Jl. Raja Ali H., Kp. Seraya, Kec. Batu Ampar, Kota Batam, Kepulauan Riau 29444</p>
+      </div>
+      <!-- Destinasi 7 -->
+      <div class="grid-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9FvV5ha0EwiLLJtfErmDDJbl3sNZwzCDf9IqgJHyf7YLAg7Xx" alt="Masjid Laksamana Muhammad Cheng Ho">
+        <h3>Masjid Laksamana Muhammad Cheng Ho</h3>
+        <p>Tj. Buntung, Kec. Bengkong, Kota Batam, Kepulauan Riau 29444</p>
+      </div>
+      <!-- Destinasi 8 -->
+      <div class="grid-item">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS-4xyTUYBBC4oqeZd3KJCotwvEWda43qvwbesW1Y7gsKgEMdhJ" alt="Masjid Agung Raja Hamidah Kota Batam">
+        <h3>Masjid Agung Raja Hamidah Kota Batam</h3>
+        <p>Jl. Engku Putri, Tlk. Tering, Kec. Batam Kota, Kota Batam, Kepulauan Riau 29444</p>
+      </div>
+      <!-- Destinasi 9 -->
+      <div class="grid-item">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/5e/3d/f7/outside-of-temple.jpg?w=1800&h=-1&s=1" alt="Maha Vihara Duta Maitreya">
+        <h3>Maha Vihara Duta Maitreya</h3>
+        <p>Komplek Maha Vihara Duta Maitreya Bukit Beruntung, Sungai Panas, Kec. Batam Kota, Kota Batam, </p>
+      </div>
+      <!-- Destinasi 10 -->
+      <div class="grid-item">
+        <img src="https://lh5.googleusercontent.com/p/AF1QipMvF1ssYsAs1Fq3INYc9RBsj-OMxQ4jMUj7ud3R=w346-h160-k-no" alt="HKBP Batam Center">
+        <h3>HKBP Batam Center</h3>
+        <p>Jl. Raja Isa Legenda Belakang No.1 Kav 1, Baloi Permai, Kec. Batam Kota, Kota Batam, Kepulauan Riau</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
