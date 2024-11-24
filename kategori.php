@@ -13,7 +13,9 @@
             <a href="home.html"><img src="img/serenity.png" alt="Serenity Trails Logo"></a>
         </div>
         <?php
+
         include('header.php');
+        
         ?>
         <div class="user">
             <a href="login.html"><img src="img/image.jpeg" alt="User Icon"></a>
