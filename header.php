@@ -2,6 +2,10 @@
 <html>
 <head>
     <title>Header</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&amp;family=Great+Vibes&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/header_style.css">
 </head>
 <body>
@@ -16,9 +20,11 @@
             <a class="text-white text-lg font-roboto" href="informasi.php">Information</a>
         </nav>
         <div>
-            <i class="fas fa-user-circle text-3xl">
-            </i>
+            <a href="Menu_Login.php">
+                <i class="fas fa-user-circle text-3xl"></i>
+            </a>
         </div>
+
     </header>
 </body>
 </html>
