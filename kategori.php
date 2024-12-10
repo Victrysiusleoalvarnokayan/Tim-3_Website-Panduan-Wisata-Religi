@@ -16,7 +16,6 @@
     ?>
 </head>
 <body>
-    </header>
     <div class="content">
         <h1>KATEGORI WISATA</h1>
     </div>

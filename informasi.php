@@ -5,6 +5,8 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serenity Trails</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
@@ -23,13 +25,13 @@
             <h2><a href="event.php">Event</a></h2>
         </div>
         <div class="column">
-            <h2>Foto/Video Tempat Wisata</h2>
+            <h2><a href="#" >Foto/Video Tempat Wisata</a></h2>
         </div>
         <div class="column">
             <h2><a href="panduan.php">Panduan Wisata</a></h2>
         </div>
         <div class="column">
-            <h2>Ulasan</h2>
+            <h2><a href="#">Ulasan</a></h2>
         </div>
     </div>
 

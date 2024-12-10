@@ -1,6 +1,10 @@
 body{
     font-family: Arial, sans-serif;
-    background-color: burlywood;
+    background-image: url('../img/pluralisme.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     color: #ffffff;
     margin: 0;
     padding: 0;

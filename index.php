@@ -1,6 +1,14 @@
 <?php
-//php
+session_start(); // Memulai session
+
+// Periksa apakah user sudah login
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php"); // Redirect ke halaman login jika belum login
+    exit();
+}
+
 ?>
+
 <!Doctype html>
 <html lang="en">
     <title>Serenity Trails</title>
@@ -29,6 +37,17 @@
     <div>
 </head>
 <div class="container mx-auto relative z-10 text-center py-32">
-    <h1 class="text-6xl font-bold font-roboto" style="color: black; ">Temukan keindahan Dan Kedamaian Di Berbagai Destinasi Religi Di Kota Batam</h1>
-    <p class="mt-4 text-xl font-great-vibes" style="color: black">Official Team Serenity Trails</p>
+    <table>
+        <thead>
+            <tr>
+                <td h3 class="text-6xl font-bold font-roboto" style="color: black; ">Selamat Datang <?php echo htmlspecialchars($_SESSION['username']); ?>!</td>
+            </tr>
+            <tr>
+                <td h1 class="text-6xl font-bold font-roboto" style="color: black; ">Temukan keindahan Dan Kedamaian Di Berbagai Destinasi Religi Di Kota Batam</td>
+            </tr>
+            <tr>
+                <td p class="mt-4 text-xl font-great-vibes" style="color: black">Official Team Serenity Trails</td>
+            </tr>
+        </thead>
+    </table>
 </div>

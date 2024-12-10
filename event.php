@@ -8,124 +8,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Serenity Trails</title>
+  <link rel="stylesheet" href="css/event.css">
   <?php
 
   include('header.php');
     
   ?>
-  <style>
-     body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url(img/pluralisme.jpg);
-    background-size: cover;
-    background-position: center;
-    }
-
-  
-
-  .event-list {
-    text-align: center;
-    padding: 20px;
-  }
-
-  .event-list h1{
-    color: black;
-    text-decoration: none;
-  }
-
-  .event-list h1:hover{
-    text-decoration: none;
-  }
-
-  .horizontal-scroll {
-    width: 100%;
-    overflow-x: scroll;
-    scrollbar-color: transparent transparent;
-    scroll-snap-type: x mandatory;
-  }
-
-  .horizontal-scroll::-webkit-scrollbar {
-    display: none;
-  }
-
-  .container {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-
-  .event-card {
-    scroll-snap-align: center;
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 300px;
-    height: 400px;
-    aspect-ratio: 11/16;
-    position: relative;
-    margin:15px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .event-card:hover {
-    transform: scale(1.05);
-    transition: 0.3s;
-    background-color: #deb887;
-  }
-
-  .event-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-
-  }
-
-  .event-card p {
-    font-weight: bold;
-    margin: 15px 0 5px;
-    font-size: 15px;
-  }
-
-  .event-card figcaption {
-    position: absolute;
-    bottom: -3rem;
-    background-color: rgba(0, 0, 0, 0);
-    padding: 1rem 0;
-    width: 100%;
-    text-align: left;
-    transition: all 200ms;
-    color: white;
-    visibility: hidden;
-    opacity: 0;
-  }
-
-  .event-card:hover figcaption {
-    bottom: 0;
-    visibility: visible ;
-    opacity: 1;
-    pointer-events: none;
-  }
-
-  .event-card figcaption a {
-    color: aqua;
-    text-decoration: none;
-    display: inline;
-    pointer-events: auto;
-  }
-
-  .event-card figcaption a:hover {
-    color: aqua;
-    text-decoration: none;
-    display: inline;
-  }
-
-  </style>
 </head>
 
 <body>
