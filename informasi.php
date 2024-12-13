@@ -25,7 +25,7 @@
             <h2><a href="event.php">Event</a></h2>
         </div>
         <div class="column">
-            <h2><a href="#" >Foto/Video Tempat Wisata</a></h2>
+            <h2><a href="foto_dan_vidio.php" >Foto/Video Tempat Wisata</a></h2>
         </div>
         <div class="column">
             <h2><a href="panduan.php">Panduan Wisata</a></h2>
