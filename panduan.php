@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>Panduan Tempat Wisata Religi</title>
-    <link rel="stylesheet" href="css/panduan_style.css"> 
+    <link rel="stylesheet" href="css/panduan_style.css">
 </head>
 
 <body>
@@ -33,6 +33,7 @@
                 <p>Arsitektur: <strong>Memadukan gaya arsitektur Timur Tengah dengan nuansa Melayu. Masjid ini memiliki kubah utama berukuran besar tanpa tiang penyangga di dalamnya, serta ornamen khas Melayu yang indah.</p>
                 <p>Waktu Operasional: <strong>Mengikuti jadwal salat umum.</p>
                 <p>Kapasitas: <strong>Mampu menampung hingga 25.000 jamaah.</p>
+                <p></p>
             </div>
         <div class="cards">
             <div class="card">
@@ -56,7 +57,7 @@
             </div>
         <div class="cards">
             <div class="card">
-                <img alt="Masjid Cheng Hoo Bengkong Laut" height="150" 
+                <img alt="Masjid Cheng Hoo Bengkong Laut" height="150"
                 src="img/masjid_chenghoo1.jpg" width="250"/>
                 <h2>Masjid Cheng Hoo Bengkong Laut</h2>
                 <p>Lokasi: <strong>Tj. Buntung, Kec. Bengkong, Kota Batam, Kepulauan Riau.</p>
@@ -67,7 +68,7 @@
             </div>
         <div class="cards">
             <div class="card">
-                <img alt="Vihara Budhi Bhakti" height="150" 
+                <img alt="Vihara Budhi Bhakti" height="150"
                 src="img/vihara budhi bhakti.jpg" width="250"/>
                 <h2>Vihara Budhi Bhakti</h2>
                 <p>Lokasi: <strong>Jl. Pembangunan, Lubuk Baja Kota, Kec. Lubuk Baja, Kota Batam, Kepulauan Riau.</p>
@@ -78,7 +79,7 @@
             </div>
         <div class="cards">
             <div class="card">
-                <img alt="Pura Agung Amerta Bhuana" height="150" 
+                <img alt="Pura Agung Amerta Bhuana" height="150"
                 src="img/pura_agung.jpg" width="250"/>
                 <h2>Pura Agung Amerta Bhuan</h2>
                 <p>Lokasi: <strong>Jl. Gajah Mada No.3, sei Ladi, Kec. Sekupang, Kota Batam, Kepulauan Riau</p>
@@ -89,7 +90,7 @@
             </div>
         <div class="cards">
             <div class="card">
-                <img alt="Vihara Duta Maitreya Monastery" height="150" 
+                <img alt="Vihara Duta Maitreya Monastery" height="150"
                 src="img/maha_vihara_duta.JPG" width="250"/>
                 <h2>Vihara Duta Maitreya Monastery </h2>
                 <p>Lokasi: <strong>Komplek Maha Vihara Duta Maitreya Bukit Beruntung, Sungai Panas, Kec. Batam Kota, Kota Batam, Kepulauan Riau</p>
@@ -100,7 +101,7 @@
             </div>
         <div class="cards">
             <div class="card">
-                <img alt="GPIB Immanuel Batam" height="150" 
+                <img alt="GPIB Immanuel Batam" height="150"
                 src="img/gereja_immanuel.jpg" width="250"/>
                 <h2>GPIB Immanuel Batam </h2>
                 <p>Lokasi: <strong> Jl. Raja Ali H., Kp. Seraya, Kec. Batu Ampar, Kota Batam, Kepulauan Riau</p>
@@ -111,7 +112,7 @@
             </div>
         <div class="cards">
             <div class="card">
-                <img alt="Paroki Santo Damian" height="150" 
+                <img alt="Paroki Santo Damian" height="150"
                 src="img/gereja_santodamian.jpg" width="250"/>
                 <h2>Paroki Santo Damian</h2>
                 <p>Lokasi: <strong>Kompleks Green Town, Jl. Yos Sudarso, Bengkong Laut, Kec. Bengkong, Kota Batam, Kepulauan Riau</p>
@@ -122,20 +123,20 @@
             </div>
         <div class="cards">
             <div class="card">
-                <img alt="Gereja Paroki Santo Petrus" height="150" 
+                <img alt="Gereja Paroki Santo Petrus" height="150"
                 src="img/gereja_santopetrus.jpg" width="250"/>
                 <h2>Gereja Paroki Santo Petrus</h2>
                 <p>Lokasi: <strong>Jl. Anggrek Blok II No. 1, Lubuk Baja Kota, Lubuk Baja, Lubuk Baja Kota, Kec. Lubuk Baja, Kota Batam, Kepulauan Riau</p>
                 <p>Diresmikan: <strong>Tahun 1995, merupakan tempat ibadah yang damai dan indah, serta menyuguhkan pengalaman spiritual yang mengesankan bagi pengunjung.</p>
                 <p>Arsitektur: <strong>memiliki desain arsitektur yang sederhana namun elegan, dengan interior yang nyaman untuk beribadah. Altar utama yang besar dan indah menjadi fokus utama di dalam gereja.</p>
                 <p>Waktu Operasional: <strong>Senin-Jumat(18.00-19.00),
-                                              Sabtu: 18.00-19.15, 
+                                              Sabtu: 18.00-19.15,
                                               Minggu: 09.00-10.15</p>
                 <p>Kapasitas: <strong>Mampu menampung sekitar 800 hingga 1.000 orang.</p>
             </div>
         <div class="cards">
             <div class="card">
-                <img alt="Gereja HKBP Batam" height="150" 
+                <img alt="Gereja HKBP Batam" height="150"
                 src="img/gereja_hkbp_batamcenter.png" width="250"/>
                 <h2>Gereja HKBP Batam</h2>
                 <p>Lokasi: <strong>Jl. Kamboja No.1, Lubuk Baja Kota, Kec. Batam Kota, Kota Batam, Kepulauan Riau.</p>
@@ -146,11 +147,11 @@
                 <p>Kapasitas: <strong>Mampu menampung sekitar 700 hingga 1.000 orang.</p>
              </div>
 
-            
+
 
             <div class="tips">
-             <p class="tips">TIPS MENGUNJUNGI:<p>                
-                <p>Waktu Terbaik: Kunjungi pada hari-hari besar keagamaan untuk merasakan suasana yang lebih hidup.</p> 
+             <p class="tips">TIPS MENGUNJUNGI:<p>
+                <p>Waktu Terbaik: Kunjungi pada hari-hari besar keagamaan untuk merasakan suasana yang lebih hidup.</p>
                 <p>Etika: Hormati norma dan aturan yang berlaku di setiap tempat ibadah.</p>
                 <p>Aturan Berpakaian: Sopan dan tertutup atau warna baju tidak mencolok,dan tidak menggunakan simbol dan logo kontroversial.</p>
                 <p>Transportasi: Gunakan transportasi umum atau sewa kendaraan untuk memudahkan perjalanan antar lokasi.</p>
