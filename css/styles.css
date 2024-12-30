@@ -7,7 +7,7 @@
 
 body {
     width: 100%;
-    background-color: #f4f4f4;
+    background-color: #f7f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,14 +22,17 @@ body::before{
     height: 100%;
     background-image: url('../img/serenity.jpeg');
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     z-index: -1;
 }
 
 .wrapper {
-    width: 490px;
+    max-width: 300px;
+    width : 100%;
     border-radius: 8px;
-    padding: 30px;
+    padding: 15px;
     text-align: center;
     border: 1px solid #ffffff80;
     backdrop-filter: blur(8px);
@@ -43,13 +46,13 @@ form{
 h2{
     font-size: 2.5 rem;
     margin-bottom: 20px;
-    color: #fff;
+    color: #fcfcfc;
 }
 
 .input-field {
     position: relative;
     border-bottom: 2px solid #ccc;
-    margin: 15px 0;
+    margin: 5px 0;
 }
 
 .input-field label{
@@ -61,6 +64,7 @@ h2{
     font-size: 16px;
     pointer-events: none;
     transition: 0.15s ease;
+    overflow: hidden;
 }
 
 .input-field input{
@@ -107,16 +111,37 @@ h2{
     text-decoration: underline;
 }
 
+/* Gaya untuk select agar seragam dengan input lainnya */
+.input-field select {
+    width: 100%;
+    height: 40px;  /* Pastikan tinggi input dan select konsisten */
+    padding: 10px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    appearance: none; /* Hilangkan default dropdown */
+
+
+}
+
+/* Hover dan fokus */
+.input-field select:hover,
+.input-field select:focus {
+    outline: none;
+}
+
+
 button{
     width: 100%;
     background: #fff;
     color: #000;
     font-weight: 600;
     border: none;
-    padding: 12px 20px;
+    padding: 8px 16px;
     cursor: pointer;
     border-radius: 3px;
-    font-size: 16px;
+    font-size: 14px;
     border: 2px solid transparent;
     transition: 0.3s ease;
 }

@@ -15,7 +15,7 @@
         </div>
         <nav class="space-x-8">
             <a class="text-white text-lg font-roboto" href="index.php">Home</a>
-            <a class="text-white text-lg font-roboto" href="peta_wisata.php">Destination</a>
+            <a class="text-white text-lg font-roboto" href="kategori.php">Destination</a>
             <a class="text-white text-lg font-roboto" href="informasi.php">News</a>
         </nav>
         <div>

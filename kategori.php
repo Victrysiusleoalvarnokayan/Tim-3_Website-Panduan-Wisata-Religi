@@ -26,7 +26,7 @@
             <p>Anda akan diberitahu tentang tempat ibadah di batam mulai dari islam, kristen, hindu, dan budha juga mengetahui info tentang bangunan tempat ibadah tersebut.</p>
         </div>
         <div class="card">
-            <img alt="Tempat Ziarah Kota Batam" height="200" src="img/makam raja nong isa.jpg" width="300"/>
+            <img alt="Tempat Ziarah Kota Batam" height="200" src="img/makam_raja_nong_isa.jpg" width="300"/>
             <h2><a href="tempat_ziarah.php">Tempat Ziarah Kota Batam</h2></a>
             <p>Anda akan melihat tempat ziarah yang biasa dikunjungi untuk wisata religi khususnya di kota Batam yang sudah cukup terkenal dan kerap di kunjungi jelang Hari Jadi Kota Batam.</p>
         </div>

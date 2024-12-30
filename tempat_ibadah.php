@@ -1,101 +1,134 @@
 <?php
+include 'koneksi.php';
 
+// Cek koneksi
+if (!$koneksi) {
+    die("Gagal konek: " . mysqli_connect_error());
+}
+
+// Query data dari tabel object_wisata
+$sql = "SELECT * FROM object_wisata";
+$result = mysqli_query($koneksi, $sql);
+
+// Inisialisasi array untuk menyimpan data
+$data = [];
+
+// Jika ada data, simpan ke array
+if (mysqli_num_rows($result) > 0) {
+    while ($row = mysqli_fetch_assoc($result)) {
+        $data[] = $row;
+    }
+}
+
+// Tutup koneksi
+mysqli_close($koneksi);
+
+// Data sudah ada di array $data dan siap digunakan
 ?>
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Tempat Ibadah</title>
-    <link rel="stylesheet" href="tempat_ibadah_style.css">
+    <title>Tempat Ibadah - Serenity Trails</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Great+Vibes&display=swap"
+        rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Peta Wisata - Jelajahi berbagai destinasi wisata religi di Batam.">
+    <?php
+
+    include('header.php');
+
+    ?>
+    <style>
+        nav {
+            position: relative;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .grid-item {
+            background: white;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+        }
+
+        .grid-item:hover {
+            background-color: #deb887;
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .grid-item h3 {
+            margin-top: 10px;
+            font-size: 1.25rem;
+        }
+
+        .grid-item a {
+            text-decoration: none;
+            cursor: pointer;
+            color: black;
+        }
+
+        .grid-item a:hover {
+            text-decoration: underline;
+            color: aqua;
+        }
+    </style>
 </head>
-<body>
-    <div class="header">
-        <img alt="Serenity Trails Logo" height="50" src="serenity.png" width="100"/>
-            <nav>
-                <a href="home.html">Home</a>
-                <a href="Kategori.php">Category</a>
-                <a href="destinasi.html">Destination</a>
-                <a href="informasi.html">Information</a>
-            </nav>
-        <div class="user-icon">
-            <i class="fas fa-user-circle"></i>
-            <img alt="user-icon" src="image.jpeg">
-            <a href="login.html"></a>
+<style>
+    body {
+        background-image: url('https://hidayatullah.com/wp-content/uploads/2022/09/Pluralisme-agama-semua-agama-tidak-sama.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: #fff;
+    }
+</style>
+
+<body class="bg-burlywood text-white">
+    <main>
+        <h1 class="text-4xl font-bold font-roboto text-black" style="text-align: center;">Tempat Ibadah</h1>
+        <p class="text-xl font-light text-black" style="text-align: center">Jelajahi berbagai destinasi wisata</p>
+
+        <div class="grid-container">
+            <?php if (!empty($data)): ?>
+                <?php foreach ($data as $row): ?>
+                    <!-- Destinasi -->
+                    <div class="grid-item">
+                        <img src="<?= htmlspecialchars($row['foto']); ?>" alt="<?= htmlspecialchars($row['nama_tempat']); ?>">
+                        <h2><?= htmlspecialchars($row['nama_tempat']); ?></h2>
+                        <p>Telepon: <?= htmlspecialchars($row['telepon']); ?></p>
+                        <p>Pengelola: <?= htmlspecialchars($row['pic']); ?></p>
+                        <p><?= htmlspecialchars($row['informasi']); ?></p>
+                        <a href="<?= htmlspecialchars($row['koordinat']); ?>" target="_blank">Lihat Maps</a>
+                        <<a href="event.php?nama_tempat=<?= urlencode($row['nama_tempat']); ?>" target="_blank">Lihat Event</a>
+                    </div>
+                <?php endforeach; ?>
+            <?php else: ?>
+                <p style="text-align: center; color: black;">Tidak ada data tempat ibadah ditemukan.</p>
+            <?php endif; ?>
         </div>
-    </div>
-    <div class="content">
-        <h1>ISLAM</h1>
-        <div class="cards">
-            <div class="card">
-                <img alt="Masjid Sultan Mahmud Riayat Syah" height="150" src="masjid_sultan.jpeg" width="250"/>
-                <a href="masjid_sultan.php"><h2>Masjid Sultan Mahmud Riayat Syah</h2></a>
-                <p>Masjid Sultan Mahmud Riayat Syah adalah permata baru Kota Batam yang wajib Anda kunjungi. Dengan arsitektur megah dan kapasitas yang besar, masjid ini menjadi pusat ibadah sekaligus destinasi wisata religi yang menarik. Nikmati keindahan arsitektur Islam modern dan pemandangan kota Batam dari menara pandangnya yang menjulang tinggi.</p>
-            </div>
-            <div class="card">
-                <img alt="Masjid Agung Kota Batam" height="150" src="masjid_agung.jpg" width="250"/>
-                <a href="masjid_raya.php"><h2>Masjid Agung Kota Batam</h2></a>
-                <p>salah satu masjid yang memiliki desain arsitektur yang unik dengan kubah berbentuk limas segi empat atau menyerupai piramida. dan masjid ini terletak di pusat kota batam yaitu di Batam Kota.</p>
-            </div>
-            <div class="card">
-                <img alt="Masjid Tanwirun Naja (Masjid Tanjak)" height="150" src="ibadah.jpg" width="250"/>
-                <h2>Masjid Tanwirun Naja (Masjid Tanjak)</h2>
-                <p>yang lebih dikenal dengan Masjid Tanjak adalah sebuah Masjid yang terinspirasi dari bentuk tanjak, yaitu hiasan kepala khas Melayu yang melambangkan kewibawaan.dan terletak tepat didepan Bandara Hang Nadim Batam.</p>
-            </div>
-            <div class="card">
-                <img alt="Masjid Cheng Hoo Bengkong Laut" height="150" src="masjid_chenghoo.jpg" width="250"/>
-                <h2>Masjid Cheng Hoo Bengkong Laut</h2>
-                <p>sebuah masjid unik di Batam yang memadukan unsur budaya Tionghoa dan Islam. Masjid ini dibangun sebagai bentuk penghormatan kepada Laksamana Cheng Ho,dan masjid ini terletak dikawasan bengkong laut batam.</p>
-            </div>
-        </div>
-    </div>
-    <div class="content">
-        <h1>KRISTEN</h1>
-        <div class="cards">
-            <div class="card">
-                <img alt="Gereja Immanuel" height="150" src="gereja_immanuel.jpg" width="250"/>
-                <h2>Gereja_Immanuel</h2>
-                <p>salah satu gereja Protestan yang cukup dikenal di Kota Batam. Gereja ini memiliki sejarah yang panjang dan menjadi pusat ibadah serta kegiatan rohani bagi banyak umat Kristiani di Batam.</p>
-            </div>
-            <div class="card">
-                <img alt="Gereja Santo Damian" height="150" src="gereja_santodamian.jpg" width="250"/>
-                <h2>Gereja Paroki Santo Damian</h2>
-                <p>salah satu gereja Katolik yang cukup besar dan aktif di wilayah Batam. Gereja ini berada di bawah naungan Keuskupan Pangkal Pinang dan memiliki peran penting dalam kehidupan umat Katolik di sekitar wilayah Bengkong, Nongsa, dan Batam Center.</p>
-            </div>
-            <div class="card">
-                <img alt="HKBP Batam Center" height="150" src="gereja_hkbp_batamcenter.png" width="250"/>
-                <h2>HKBP Batam Center</h2>
-                <p>salah satu jemaat dari Huria Kristen Batak Protestan (HKBP) yang terletak di kota Batam. Gereja ini menjadi pusat ibadah dan kegiatan rohani bagi umat Kristiani, khususnya warga Batak yang berada di sekitar wilayah Batam Centre.</p>
-            </div>
-            <div class="card">
-                <img alt="Gereja Paroki Santo Petrus" height="150" src="gereja_santopetrus.jpg" width="250"/>
-                <h2>Gereja Paroki Santo Petrus</h2>
-                <p>sebuah gereja Katolik yang umumnya memiliki peran penting dalam kehidupan spiritual umat Katolik di wilayahnya. Nama "Santo Petrus" diambil dari salah satu rasul Yesus Kristus yang dianggap sebagai "batu karang" bagi Gereja Katolik.</p>
-            </div>
-        </div>
-    </div>
-    <div class="content">
-        <h1>BUDHA</h1>
-        <div class="cards">
-            <div class="card">
-                <img alt="Maha Vihara Duta Maitreya" height="150" src="maha_vihara_duta.JPG" width="250"/>
-                <h2>Maha Vihara Duta Maitreya</h2>
-                <p>sebuah vihara Buddha yang sangat terkenal dan menjadi salah satu landmark agama Buddha terbesar di Asia Tenggara, khususnya di Indonesia. Terletak di Kota Batam, vihara ini tidak hanya menjadi tempat ibadah bagi umat Buddha, tetapi juga menjadi destinasi wisata yang menarik bagi pengunjung dari berbagai latar belakang.</p>
-            </div>
-            <div class="card">
-                <img alt="Vihara Budhi Bhakti" height="150" src="vihara budhi bhakti.jpg" width="250"/>
-                <h2>Vihara Budhi Bhakti</h2>
-                <p> salah satu vihara Buddha tertua dan paling terkenal di Kota Batam. Vihara ini tidak hanya menjadi tempat ibadah bagi umat Buddha, tetapi juga menjadi bagian penting dari sejarah dan budaya kota Batam.</p>
-            </div>
-            <div class="card">
-                <img alt="Maitri Vihara Sagara" height="150" src="maitri vihara sagara.jpeg" width="250"/>
-                <h2>Maitri Vihara Sagara</h2>
-                <p>salah satu vihara Buddha yang terletak di Batam, Kepulauan Riau. Meskipun namanya mungkin tidak sebesar vihara-vihara lain yang lebih terkenal, Vihara Maitri Sagara memiliki peran penting dalam kehidupan umat Buddha di sekitar wilayahnya.</p>
-            </div>
-            <div class="card">
-                <img alt="Vihara Samudra Dharma" height="150" src="vihara samudra dharma.jpg" width="250"/>
-                <h2>Vihara Samudra Dharma</h2>
-                <p>salah satu tempat ibadah umat Buddha yang cukup terkenal di Kota Batam. Awalnya, pada tahun 1990, vihara ini hanyalah sebuah gubuk kecil yang sederhana. Namun, seiring berjalannya waktu dan berkat dukungan dari umat, Vihara Samudra Dharma kini telah tumbuh menjadi kompleks yang megah dan indah.</p>
-            </div>
-        </div>
-    </div>
+    </main>
 </body>
+
 </html>

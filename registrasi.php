@@ -4,13 +4,19 @@ include 'koneksi.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user = $_POST['user'];
+    $email = $_POST['email'];
+    $alamat = $_POST['alamat'];
+    $hp = $_POST['hp'];
+    $role = $_POST['role'];
     $pass = $_POST['pass'];
     $confirm_pass = $_POST['confirm_pass'];
 
     // Sanitasi input
     $user = mysqli_real_escape_string($koneksi, $user);
-    $pass = mysqli_real_escape_string($koneksi, $pass);
-    $confirm_pass = mysqli_real_escape_string($koneksi, $confirm_pass);
+    $email = mysqli_real_escape_string($koneksi, $email);
+    $alamat = mysqli_real_escape_string($koneksi, $alamat);
+    $hp = mysqli_real_escape_string($koneksi, $hp);
+    $role = mysqli_real_escape_string($koneksi, $role);
 
     // Validasi password
     if ($pass !== $confirm_pass) {
@@ -21,8 +27,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (mysqli_num_rows($cek_user) > 0) {
             $error = "Username sudah digunakan, silakan pilih username lain.";
         } else {
-            // Insert password langsung ke database tanpa hashing
-            $query = "INSERT INTO user (username, password) VALUES ('$user', '$pass')";
+            // Hash password
+            $hashed_password = password_hash($pass, PASSWORD_BCRYPT);
+
+            // Simpan data ke database
+            $query = "INSERT INTO user (username, email, alamat, hp, role, password)
+                      VALUES ('$user', '$email', '$alamat', '$hp', '$role', '$hashed_password')";
             if (mysqli_query($koneksi, $query)) {
                 // Redirect ke halaman login setelah berhasil registrasi
                 header("Location: login.php");
@@ -54,7 +64,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <h2>Create New Account</h2>
             <div class="input-field">
                 <input type="text" class="form-control" id="user" name="user" required>
-                <label>Enter Your Username</label>
+                <label>Enter Your Username*</label>
+            </div>
+            <div class="input-field">
+                <input type="email" class="form-control" id="email" name="email" required>
+                <label>Enter Your Email*</label>
+            </div>
+            <div class="input-field">
+                <input type="text" class="form-control" id="alamat" name="alamat" required>
+                <label>Enter Your Addres</label>
+            </div>
+            <div class="input-field">
+                <input type="text" class="form-control" id="hp" name="hp" required>
+                <label>No. HP</label>
+            </div>
+            <div class="input-field">
+                <select class="form-label" id="role" name="role" required>
+                    <option value="" disabled selected>Choose your role</option>
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                    <option value="Owner">Owner</option>
+                </select>
             </div>
             <div class="input-field">
                 <input type="password" class="form-control" id="pass" name="pass" required>
